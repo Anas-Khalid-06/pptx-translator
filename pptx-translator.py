@@ -79,7 +79,7 @@ python-pptx doesn't support:
 TERMINOLOGY_NAME = 'pptx-translator-terminology'
 
 
-translate = boto3.client(service_name='translate')
+translate = boto3.client(service_name='translate', region_name='us-east-1')
 
 
 def translate_presentation(presentation, source_language_code, target_language_code, terminology_names):
